@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/45093b9264.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- TODO:1.na klik mini navbar u mobilno.  2.before after skilovi. 3.NODEMAILER -->
+    <header>
+      <nav class="nav" id="nav">
+        <div class="nav-header">
+          <p>Milan <span class="lns">Julinac</span></p>
+          <button class="nav-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+          <ul class="nav_list">
+            <li><a class="nav-links" href="#welcome-section">Welcome</a></li>
+            <li><a class="nav-links" href="#skills-section">Skills</a></li>
+            <li><a class="nav-links" href="#work-section">Work</a></li>
+            <li><a class="nav-links" href="#contact-section">Contact</a></li>
+          </ul> 
+        </div>
+      </nav>
+      <section id="welcome-section" class="section welcome-section">
+        <h2>Hey, I am Milan</h2>
+        <p>a full-stack web developer</p>
+        <p id="scroll-p">scroll down</p>
+        <div class="scroll-down">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- <a href="#" class="neon-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          message me
+        </a> -->
+      </section>
+    </header>
+
+    <section id="skills-section" class="skills-section">
+      <span class="neon-underline">
+        <h2>SKIILLS</h2>
+      </span>
+      <div class="skills-container">
+        <div class="card general" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+          <span class="red-underline">
+            <h4 class="skill-name">General</h4>
+            
+          </span>
+          <p class="skill-description">
+            List of my General skills
+          </p>
+          <ul class="skills">
+            <li>VsCode</li>
+            <li>GitHub</li>
+            <li>Trello</li>
+            <li>Linux</li>
+            <li>GitBash</li>
+            <li>Eclipse</li>
+          </ul>
+        </div>
+        <div class="card front-end" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+          <span class="red-underline">
+            <h4 class="skill-name">FrontEnd</h4>
+          </span>
+          <p class="skill-description">
+            List of my FrontEnd skills
+          </p>
+          <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>React.js</li>
+            <li>Redux</li>
+            <li>JavaScript</li>
+            <li>Bootstrap4</li>
+            <li>ES6</li>
+          </ul>
+        </div>
+        <div class="card back-end" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+          <span class="red-underline">
+            <h4 class="skill-name">BackEnd</h4>
+          </span>
+          <p class="skill-description">
+            List of my BackEnd skills
+          </p>
+          <ul class="skills">
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>RESTful API</li>
+            <li>MySQL</li>
+            <li>Express.js</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-section" class="work-section">
+      <span class="neon-underline">
+        <h2>WORK</h2>
+      </span>
+      <div class="project">   
+        <div class="work-card">
+          <div class="card-content">
+            <div class="photo" >
+              <img id="project-photo" src="">
+            </div>
+            <div class="description">
+              <h2 id="project-title"></h2>
+              <p id="project-description"></p>
+              <h2>Tech used</h2>
+              <p id="project-front"></p>
+              <p id="project-back"></p>
+              <button>Live Version</button>
+              <button>Git</button>
+            </div>
+          </div>
+          </div>
+        </div>
+            <div class="arrows">
+              <a class="arrow" id="prev-btn">
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="arrow" id="next-btn">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+    </section>
+
+    <section id="contact-section" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+      </div>
+      <div class="contact-links">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/milan.julinac.9"
+          class="btn contact-details"
+          ><i class="fa fa-facebook-square"></i>Facebook</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/MilanJulinac42"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fa fa-github"></i>GitHub</a
+        >
+        <a href="_blank" class="btn contact-details"
+          ><i class="fa fa-envelope"></i> Email</a
+        >
+        <a href="_blank" class="btn contact-details"
+          ><i class="fa fa-instagram"></i>Instagram</a
+        >
+        <a
+          href="https://www.linkedin.com/in/milan-julinac-782604192/"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fa fa-linkedin"></i>LinkedIn</a
+        >
+      </div>
+    </section>
+
+    <a href="#welcome-section" class="top-link">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+    <script src="index.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
